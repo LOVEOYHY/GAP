@@ -1,7 +1,7 @@
 
 
 require(["../../js/conf/config"],function(){
-    require(["jquery","swiper","template-web"],function($,Swiper,template){
+    require(["jquery","swiper","template-web","cookie"],function($,Swiper,template,cookie){
         $(function(){
             // 为相对路径
             $("#head").load("../lib/head.html");
@@ -35,14 +35,21 @@ require(["../../js/conf/config"],function(){
                             "price" : price
                         }
                         //console.log(obj);
-                        list.push(obj);
+                        // list.push(obj);
                         //console.log(list);
                         var str = JSON.stringify(list);
                         //console.log(str);
-                        var now = new Date();
-                        now.setDate(now.getDate()+7);
-                        document.cookie = "list=" + str + "; expires=" + now + "; path=/";
+                        // var now = new Date();
+                        // now.setDate(now.getDate()+7);
+                        // document.cookie = "list=" + str + "; expires=" + now + "; path=/";
+                        
+                        
+                        cookie.setCookie("list",JSON.stringify(obj),3600*12*7,"/");
+                        
                         window.open("/pages/detailed-information/detailed-inf.html"); 
+
+                        
+
                     })
 
                 } 

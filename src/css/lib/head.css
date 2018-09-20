@@ -179,3 +179,6 @@ body{
     font-weight: 600;
     padding: 0 30px;
 }
+.nav_index,.nav_sale{
+    cursor: pointer;
+}

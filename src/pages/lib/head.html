@@ -1,5 +1,10 @@
 <!-- 页头的样式 -->
 <link rel="stylesheet" href="../../css/lib/head.css">
+<!-- 配置文件 -->
+<!-- <script data-main="head.js" src="../../js/lib/require.js"></script> -->
+<script src="../../js/lib/jquery-1.9.0.js"></script>
+
+<!-- <script src="./pages/lib/head.js"></script> -->
 <!-- 页头 -->
 <div id="head">
     <!-- 注册/登录 -->
@@ -13,13 +18,15 @@
                 <a href="./pages/shopping-cart/cart.html" target="_blank"></a>
             </div>
             <div class="register">
-                注册/登录<br>
-                我的账户&nbsp;&nbsp;
-                <i class="fa fa-angle-down"></i>
+                <p class="register_word">
+                    注册/登录<br>
+                    我的账户&nbsp;&nbsp;
+                    <i class="fa fa-angle-down"></i>
+                </p>
                 <ul class="header_menu">
                     <li class="header_inf">
-                        <a href="./pages/login/login.html" target="_blank">注册</a>&nbsp;/&nbsp;
-                        <a href="./pages/register/register.html" target="_blank">登录</a>
+                        <a class="header_inf_login">注册</a>&nbsp;/&nbsp;
+                        <a class="header_inf_register">登录</a>
                     </li>
                     <i></i>
                     <li><a href="">我的订单</a></li>
@@ -50,7 +57,7 @@
     <!-- 导航 -->
     <ul class="nav">
         <li><img src="https://www.gap.cn/theme/frontend/default/default/images/global/logo.gif" alt=""></li>
-        <li><a href="">首页</a></li>
+        <li><a class="nav_index">首页</a></li>
         <li>|</li>
         <li><a href="">新品</a></li>
         <li>|</li>
@@ -70,6 +77,74 @@
         <li>|</li>
         <li><a href="">孕妇装</a></li>
         <li>|</li>
-        <li><a href="./pages/sale/sale.html">Sale</a></li>
+        <li><a class="nav_sale">Sale</a></li>
     </ul>
 </div>
+
+<script>
+    $(function () {
+        console.log("kaishi");
+        $(".register").on("click", function (event) {
+            //console.log("aaa");
+            $(".header_menu").show();
+            event.stopPropagation();
+            $("html").click(function () {
+                $(".header_menu").hide();
+            })
+
+        })
+
+        $(".header_inf_login").click(function () {
+            window.open("/pages/login/login.html");
+        })
+
+        $(".header_inf_register").click(function () {
+            window.open("/pages/register/register.html");
+        })
+
+        $(".nav_sale").click(function () {
+            window.open("/pages/sale/sale.html");
+        })
+
+        $(".nav_index").click(function () {
+            window.open("/index.html");
+        })
+
+
+
+        
+        var user = JSON.parse(getCookie("users"));
+        console.log("head"+user);
+
+        if(user.length != 0){
+            $(".register_word").html("您好，欢迎<br>我的账户&nbsp;&nbsp;﹀");
+        }
+
+
+
+        $(".register").on("click", function (event) {
+            console.log("aaa");
+            $(".header_menu").show();
+            event.stopPropagation();
+            $("html").click(function () {
+                $(".header_menu").hide();
+            })
+
+        })
+
+
+    })
+
+
+
+    function getCookie(key) {
+        var cookiesstr = document.cookie;
+        var list = cookiesstr.split("; ");
+        for(var i in list) {
+            var kv = list[i].split("=");
+            if(kv[0] == key) return kv[1];
+        }
+        return null;
+    }
+    
+</script>

@@ -116,8 +116,14 @@
     transition: 0.5s;
 }
 .already-pw-input .already-pw-use{
-    margin-top: 80px;
+    margin-top: 45px;
     margin-bottom: 5px;
+}
+#already-pw_btn{
+    display: block;
+    margin: 18px 0 0 235px;
+    color: #9F0101;
+    height: 20px;
 }
 
 /* 未注册用户 */

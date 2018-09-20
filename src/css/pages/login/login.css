@@ -60,6 +60,9 @@
     position: relative;
     margin-left: 185px;
 }
+.loginBox-form-right span{
+    color: #9F010A;
+}
 .input-big{
     width: 300px;
     height: 23px;
