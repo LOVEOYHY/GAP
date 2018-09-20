@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sale</title>
+    <!-- css文件 -->
+    <link rel="stylesheet" href="../../css/pages/sale/sale.css">
+    <!-- <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../../js/lib/template-web.js"></script> -->
+    <!-- <script src="./sale.js"></script> -->
+    <!-- 配置文件 -->
+    <script data-main="sale.js" src="../../js/lib/require.js"></script>
+</head>
+<body>
+    <!-- 页头 -->
+    <div id="head"></div>
+    <!-- sale页面 -->
+    <div id="sale">
+        <p class="sale-head"><a href="">首页</a>&nbsp;>&nbsp;&nbsp;sale</p> 
+        <!-- 左边导航栏 -->
+        <div class="sale-nav">
+            <p class="sale-nav-title">限时特惠</p>
+            <span><a href="">限时超值购</a></span>
+            <p  class="sale-nav-line"></p>
+            <p class="sale-nav-title">分类</p>
+            <ul class="sale-nav-list">
+                <li><a href="">女装</a></li>
+                <li><a href="">男装</a></li>
+                <li><a href="">男婴</a></li>
+                <li><a href="">女婴</a></li>
+                <li><a href="">男幼</a></li>
+                <li><a href="">女幼</a></li>
+                <li><a href="">男孩</a></li>
+                <li><a href="">女孩</a></li>
+                <li><a href="">GapFit</a></li>
+                <li><a href="">孕妇装</a></li>
+            </ul>
+        </div>
+        <!-- 右边商品栏 -->
+        <div class="sale-goods">
+            <p class="sale-goods-sort">
+                <select name="" id="">
+                    <option value="">默认排序</option>
+                    <option value="">新品优先</option>
+                    <option value="">价格从低到高</option>
+                    <option value="">价格从高到低</option>
+                </select>
+            </p>
+            <p class="sale-goods-more">
+                <span><a href=""><a href="">全部</a></a></span>
+                <a href="">更多</a>
+            </p>
+
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div id="foot"></div>
+
+    <!-- 模板 -->
+    <script id="saleGoods" type="text/html">
+        {{each list}}
+        <div class="saleGoodsBox">
+            <a ><img class="saleGoodsBox-picture" src="{{$value.mainPic}}" alt=""></a>
+            <p class="saleGoodsName"><a href="">{{$value.goodsName}}</a></p>
+            <p class="priceNow">￥{{$value.price}}</p>
+            <!-- <span class="price">{{$value.price}}</span> -->
+        </div>
+        {{/each}}
+    </script>
+
+
+</body>
+<script>
+    // href="../../pages/detailed-information/detailed-inf.html" target="_blank"
+</script>
+</html>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>GAP</title>
     <link rel="stylesheet" href="css/index.css">
-    <script data-main="js/index.js" src="js/lib/require.js"></script>
+    <!-- 配置文件 -->
+    <script data-main="index.js" src="js/lib/require.js"></script>
     <!-- jquery 文件 -->
     <!-- <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script> -->
     <!-- 图标文字 文件 -->
@@ -13,79 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
     <!-- swipter4 的 js 文件 -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script> -->
-    
-    
+
+
 </head>
 <body>
-    <!-- 注册/登录 test-->
-    <div class="header">
-        <div class="header_content">
-            <a class="gap-small-picture" href=""></a>
-            <a class="old-small-picture" href=""></a>
-            满RMB199免运费 | 正价商品退换货包邮
-            <a class="minute" href=""> 查看详情</a>
-            <div class="shopping">
-                <a href=""></a>
-            </div>
-            <div class="register">
-                注册/登录<br>
-                我的账户&nbsp;&nbsp;
-                <i class="fa fa-angle-down"></i>
-                <ul class="header_menu">
-                    <li class="header_inf">
-                        <a href="">注册</a>&nbsp;/&nbsp;
-                        <a href="">登录</a>
-                    </li>
-                    <i></i>
-                    <li><a href="">我的订单</a></li>
-                    <li><a href="">帮助中心</a></li>
-                    <li><a href="">会员服务</a></li>
-                    <li><a href="">在线客服</a></li>
-                    <li><a href="">查找门店</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- 优惠提示 -->
-    <div class="symb">
-        <p>
-            会&nbsp;员&nbsp;尊&nbsp;享&nbsp;&nbsp;购正价商品满500元
-            <span>立减100元！</span>
-            <a href="">立即登录/注册</a>
-        </p>
-    </div>
-    <!-- 搜索 -->
-    <div class="search">
-        <p>
-            <input type="text" placeholder="&nbsp;&nbsp;请输入关键字">
-            <a href=""><img src="./img/search.gif" alt=""></a>
-        </p>
-    </div>
-    <!-- 导航 -->
-    <ul class="nav">
-        <li><img src="./img/logo.gif" alt=""></li>
-        <li><a href="">首页</a></li>
-        <li>|</li>
-        <li><a href="">新品</a></li>
-        <li>|</li>
-        <li><a href="">女装</a></li>
-        <li>|</li>
-        <li><a href="">GapFit</a></li>
-        <li>|</li>
-        <li><a href="">男装</a></li>
-        <li>|</li>
-        <li><a href="">女孩</a></li>
-        <li>|</li>
-        <li><a href="">男孩</a></li>
-        <li>|</li>
-        <li><a href="">幼儿</a></li>
-        <li>|</li>
-        <li><a href="">婴儿</a></li>
-        <li>|</li>
-        <li><a href="">孕妇装</a></li>
-        <li>|</li>
-        <li><a href="">Sale</a></li>
-    </ul>
+    <div id="head"></div>
     <!-- 打折的轮播图 -->
     <div class="discount">
         <div class="swiper-container" id="one">
@@ -98,7 +32,7 @@
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev" id="one3"></div>
             <div class="swiper-button-next" id="one4"></div>
-        </div>     
+        </div>
     </div>
     <!-- 定制 -->
     <div class="creation">
@@ -118,76 +52,76 @@
                     <div class="swiper-slide">
                         <div class="twenty-picture">
                             <div>
-                                <a href=""><img src="./img/df04eb399c6f4fac4a855b545a0484f9_6.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/df04eb399c6f4fac4a855b545a0484f9_6.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/167d92a985c4f8f5bbb2db895052b05d_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/167d92a985c4f8f5bbb2db895052b05d_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/f3fc595ac2d1eb485883fe6beae2d571_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/f3fc595ac2d1eb485883fe6beae2d571_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/161d7565559b3de262557dded9d33c9e_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/161d7565559b3de262557dded9d33c9e_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/9afd5063c7d987b7f3e5d73a243503c5_1.jpg" alt="" /></a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="twenty-picture">
-                            <div>
-                                <a href=""><img src="./img/2c1a3b96941bcb75ef0cffd3f7275bba_1.jpg" alt="" /></a> 
-                            </div>
-                            <div>
-                                <a href=""><img src="./img/67ce3795b9211e4099a2cfa0223dd5f1_1.jpg" alt="" /></a> 
-                            </div>
-                            <div>
-                                <a href=""><img src="./img/355252bc02-light-hthr-grey_m_1500_1828_02_1.jpg" alt="" /></a> 
-                            </div>
-                            <div>
-                                <a href=""><img src="./img/867073light_heather_grey_m_1500_1_180831_1.jpg" alt="" /></a> 
-                            </div>
-                            <div>
-                                <a href=""><img src="./img/349898ivory_frost_m_5-349898ivory_frost_m_1_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/9afd5063c7d987b7f3e5d73a243503c5_1.jpg" alt="" /></a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="twenty-picture">
                             <div>
-                                <a href=""><img src="./img/358339true_indigo_340_m_1500_1_180808_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/2c1a3b96941bcb75ef0cffd3f7275bba_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/354980daisy_floral_white_m_10_1_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/67ce3795b9211e4099a2cfa0223dd5f1_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/879502_1500_2.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/355252bc02-light-hthr-grey_m_1500_1828_02_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/356195navy_m_1500_180810_03_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/867073light_heather_grey_m_1500_1_180831_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/334747navy_uniform_m_1500_1_180907_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/349898ivory_frost_m_5-349898ivory_frost_m_1_1.jpg" alt="" /></a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="twenty-picture">
                             <div>
-                                <a href=""><img src="./img/374836true_black_m_13-black_m_1500_18081_05_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/358339true_indigo_340_m_1500_1_180808_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/350821metallic_frost_m_1500_1_180807_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/354980daisy_floral_white_m_10_1_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/372546modern_red_2_m_1500_1_180829_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/879502_1500_2.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/851749optic_white_m_1500_1_180831_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/356195navy_m_1500_180810_03_1.jpg" alt="" /></a>
                             </div>
                             <div>
-                                <a href=""><img src="./img/370678fr_modern_red_m_1500_1_180808_1.jpg" alt="" /></a> 
+                                <a href=""><img src="./img/334747navy_uniform_m_1500_1_180907_1.jpg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="twenty-picture">
+                            <div>
+                                <a href=""><img src="./img/374836true_black_m_13-black_m_1500_18081_05_1.jpg" alt="" /></a>
+                            </div>
+                            <div>
+                                <a href=""><img src="./img/350821metallic_frost_m_1500_1_180807_1.jpg" alt="" /></a>
+                            </div>
+                            <div>
+                                <a href=""><img src="./img/372546modern_red_2_m_1500_1_180829_1.jpg" alt="" /></a>
+                            </div>
+                            <div>
+                                <a href=""><img src="./img/851749optic_white_m_1500_1_180831_1.jpg" alt="" /></a>
+                            </div>
+                            <div>
+                                <a href=""><img src="./img/370678fr_modern_red_m_1500_1_180808_1.jpg" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -197,7 +131,7 @@
                 <div class="swiper-button-next" id="two4"></div>
                 <!-- 如果需要滚动条 -->
                 <!-- <div class="swiper-scrollbar"></div> -->
-            </div> 
+            </div>
         </div>
     </div>
     <!-- GOOD -->
@@ -251,29 +185,6 @@
             <img src="./img/footer-cn1.jpg" alt="">
         </a>
     </div>
-    <!-- 手机APP -->
-    <div class="phone">
-        <!-- 最新资讯 -->
-        <div class="newest">
-            <div class="newest-p">
-                <p>BE THE FIRST TO KNOW</p>
-                <p>第一时间获取Gap最新资讯</p>
-            </div>
-            <input type="text" placeholder="请输入您的邮箱地址">
-            <div class="subscription">
-                <div class="quick-btn">马上订阅</div>
-                <a href=""><img class="weixin" src="./img/FOOTER_wechat.jpg" alt=""></a>
-                <a href=""><img class="weibo" src="./img/FOOTER_weibo.jpg" alt=""></a>
-            </div>
-        </div>
-        <!-- 手机图片 -->
-        <div class="phone-picture">
-            <img src="./img/FOOTER_downloadApp_news.jpg" alt="">
-        </div>
-        <!-- 网络咨询 -->
-        <div class="website">
-
-        </div>
-    </div>
+    <div id="foot"></div>
 </body>
 </html>

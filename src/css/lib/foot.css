@@ -1,0 +1,255 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+body{
+    width: 100%;
+}
+
+#foot{
+    overflow: hidden;
+}
+/* 手机APP */
+.phone{
+    width: 1400px;
+    height: 260px;
+    margin-top: 15px;
+    padding:20px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* 最新资讯 */
+.newest{
+    width: 465px;
+    margin: auto;
+}
+.newest,.phone-picture,.website{
+    float: left;
+}
+.newest-p{
+    height: 80px;
+    padding-top: 20px;
+}
+.newest-p p{
+    height: 22px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.newest input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 350px;
+    height: 26px;
+    text-align: center;
+    margin-left: 58px;
+}
+.quick-btn{
+    width: 96px;
+    height: 29px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.quick-btn:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
+}
+.subscription{
+    position: relative;
+}
+.subscription img{
+    width: 53px;
+    height: 31px;
+}
+.weixin{
+    position: absolute;
+    left: 175px;
+    top: 45px;
+}
+.subscription .weixin:hover{
+    width: 61px;
+    height: 39px;
+    transition: 0.5s;
+}
+.subscription .weibo{
+    position: absolute;
+    left: 225px;
+    top: 45px;
+}
+.subscription .weibo:hover{
+    width: 61px;
+    height: 39px;
+    transition: 0.5s;
+}
+/* 中间的手机图片 */
+.phone-picture{
+    width: 465px;
+    height: 240px;
+    margin-top: 10px;
+    border-left: #000 1px solid;
+    border-right: #000 1px solid;
+}
+.phone-picture img{
+    margin: 25px 0 0 135px;
+}
+/* 最后的文字 */
+.website{
+    width: 465px;
+    height: 260px;
+}
+.website .website-p{
+    height: 30px;
+    line-height: 30px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.website p{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    margin-top: 40px;
+}
+.website p span{
+    font-weight: bold;
+}
+
+/* 在线客服 */
+.online{
+    width: 1400px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.online span{
+    font-size: 16px;
+}
+.online img{
+    margin-bottom: -7px;
+}
+
+/* 查询门店 */
+.store{
+    width: 1400px;
+    height: 395px;
+    padding: 10px 0;
+    border-top: #000 4px solid;
+    border-bottom: #000 1px solid;
+}
+.store-box{
+    width: 465px;
+    height: 375px;
+    float: left;
+}
+.store-box p{
+    text-align: center;
+}
+.store-box div a{
+    font-size: 14px;
+    color: #656565;
+    text-decoration: none;
+    margin-left: 160px;
+}
+.store-box div .support-p-right{
+    margin-left: 35px;
+}
+.store-box .support-p{
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin: 25px 0 20px 0;
+}
+.store-picture{
+    text-align: center;
+}
+.store-box .store-picture a{
+    margin: 0;
+}
+.store-box .store-picture-btn{
+    width: 296px;
+    height: 28px;
+    border: #000 2px solid;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+.store-box .store-picture-btn:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
+} 
+.store-box .store-picture-phone{
+    font-size: 14px;
+    color: #656565;
+    margin-top: 20px;
+}
+.store-box .store-firm-btn{
+    width: 100px;
+    height: 28px;
+    border: #000 2px solid;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+.store-box .store-firm{
+    text-align: center;
+}
+.store-box .store-firm a{
+    margin: 0;
+}
+.store-box .store-firm-btn:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
+} 
+
+/* 页脚 */
+.footer{
+    width: 1400px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+.footer .footer-world{
+    margin: 25px 0;
+}
+.footer .footer-save{
+    margin: 30px 0;
+}
+.footer .footer-save img{
+    margin-bottom: -8px;
+}
+.footer p{
+    margin: 20px 0;
+}

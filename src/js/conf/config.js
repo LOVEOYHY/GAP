@@ -4,6 +4,6 @@ require.config({
     paths : {
         "jquery" : "https://cdn.bootcss.com/jquery/2.2.0/jquery.min",
         "swiper" : "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min",
-        "index" : "/js/index"
+        "template-web" : "./js/lib/template-web"
     }
 })

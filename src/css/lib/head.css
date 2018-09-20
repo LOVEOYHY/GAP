@@ -1,0 +1,181 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+body{
+    width: 100%;
+}
+
+#head{
+    overflow: hidden;
+}
+/* 最上方信息 */
+.header{
+    background-color: #F3F3F3;
+}
+.header_content{
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    color: #656565;
+}
+.gap-small-picture{
+    display: block ;
+    width: 60px;
+    height: 50px;
+    float: left;
+    background: url(https://www.gap.cn/theme/frontend/default/default/images/global/20160314/sister-brands-0002.png) 9px 11px no-repeat;
+    background-size: 108px 119px;
+    background-color: #fff;
+}
+.old-small-picture{
+    display: block;
+    width: 70px;
+    height: 50px;
+    float: left;
+    background: url(https://www.gap.cn/theme/frontend/default/default/images/global/20160314/sister-brands-0002.png) 6px -37px no-repeat;
+    background-size: 140px 160px;
+}
+.old-small-picture:hover{
+    background-color: #fff;
+}
+.minute{
+    font-size: 14px;
+    color: #656565;
+}
+.shopping{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+.shopping a{
+    display: block;
+    height: 50px;
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2227%22%20viewBox%3D%220%200%2020%2027%22%3E%3Cpath%20fill%3D%22%23545454%22%20d%3D%22M0%206.4v18.1S0%2027%202.5%2027h15s2.5%200%202.5-2.5V6.4H0z%22%2F%3E%3Cpath%20stroke%3D%22%23676767%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20d%3D%22M5.5%207.1S4.8%201%2010%201c5%200%204.5%206.1%204.5%206.1%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E") 14px 12px no-repeat;
+}
+.register{
+    width: 95px;
+    height: 45px;
+    float: right;
+    padding:5px 0 0 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #656565;
+    line-height: 20px;
+    cursor: pointer;
+    margin-right: 120px;
+}
+.register:hover{
+    background-color: #fff;
+}
+.header_menu{
+    width: 110px;
+    border:1px solid #DCDCDC;
+    margin-left: -15px;
+    padding-bottom: 5px;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    
+}
+.header_menu li{
+    text-align: center;
+}
+.header_menu a{
+    text-decoration: none;
+    color: #656565;
+}
+.header_inf{
+    background-color: #010D41;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.header_inf a{
+    font-size: 14px;
+    color: #fff;
+}
+.header_menu i{
+    display: block;
+    width: 90px;
+    height: 1px;
+    background-color: #CBCBCB;
+    margin-bottom: 5px;
+}
+
+/* 优惠提示 */
+.symb{
+    width: 100%;
+    height: 60px;
+    background-color: #152344;
+}
+.symb p{
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    color: #FEFEFE;
+    text-align: center;
+    background-color: #232D4B;
+}
+.symb p span{
+    margin-right: 100px;
+    font-weight: bold;
+}
+.symb p a{
+    font-size: 16px;
+    color: #FEFEFE;
+}
+
+/* 搜索框 */
+.search{
+    width: 1200px;
+    height: 40px;
+    padding-top: 10px;
+}
+.search p{
+    width: 190px;
+    height: 38px;
+    border: 1px solid #A8A8A8;
+    float: right;
+}
+.search p input{
+    width: 150px;
+    height: 38px;
+    border: 0px;
+    outline: none;
+}
+.search p a{
+    float: right;
+    margin: 8px 5px 0 0;
+}
+
+/* 导航栏 */
+.nav{
+    width: 1200px;
+    height: 70px;
+}
+.nav li{
+    width: auto;
+    height: 70px;
+    line-height: 70px;
+    font-size:12px;
+    color: #152344;
+    float: left;
+}
+.nav li img{
+    width: 70px;
+    height: 70px;
+}
+.nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #010840;
+    font-weight: 600;
+    padding: 0 30px;
+}

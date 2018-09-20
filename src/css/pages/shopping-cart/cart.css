@@ -1,0 +1,258 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* 购物车 */
+#cart{
+    width: 1000px;
+    padding: 0 100px;
+    overflow: hidden;
+}
+#cart a{
+    text-decoration: none;
+}
+/* 继续购买 */
+.cart-title{
+    height: 20px;
+    padding: 40px 0 7px;
+    text-align: right;
+}
+.cart-title a{
+    font-size: 13px;
+    color: #3366A5;
+}
+/* 购物车里的商品列表 */
+.cart{
+    width: 1000px;
+}
+/* 表头 */
+.cart-head{
+    height: 30px;
+    background-color: #7E7472;
+    font-size: 14px;
+    color: #fff;
+}
+.cart-all{
+    width: 60px;
+}
+.cart-goods{
+    width: 340px;
+}
+.cart-other{
+    text-align: left;
+    width: 200px;
+}
+/* 信息列表 */
+.cart-list{
+    height: 120px;
+    background-color: #F4F9FB;
+}
+.cart-list td{
+    border-bottom: 1px black dotted;
+}
+/* 勾选 */
+.cart-list-check-box{
+    width: 30px;
+    padding: 0 5px;
+    height: 120px;
+    float: left;
+    text-align: center;
+    background-color: #EFEAE9;
+}
+.cart-list-check img{
+    height: 25px;
+    width: 25px;
+    margin: 20px 0 15px;
+}
+/* 商品 */
+.cart-list-goods{
+    padding: 10px 0;
+}
+.cart-list-goods img{
+    width: 75px;
+    height: 100px;
+    margin-right: 15px;
+    float: left;
+}
+.cart-list-goods_box{
+    width: 240px;
+    float: right;
+    padding-right: 10px
+}
+.cart-list-goods p{
+    float: left;
+    width: 240px;
+    font-size: 13px;
+}
+.cart-list-goods a{
+    color: #517DA8;
+    font-size: 15px;
+}
+.cart-list-goods-num{
+    color: #A0A1A1;
+}
+.cart-list-goods-red{
+    color: #9F010A;
+}
+/* 信息 */
+.cart-list-inf-ul{
+    margin-top: -30px;
+    font-size: 13px;
+}
+.cart-list-inf-ul{
+    color: #A0A1A1;
+}
+.cart-list-inf-color,.cart-list-inf-size{
+    color: #A0A1A1;
+}
+.cart-list-inf-sum{
+    color: black;
+}
+.cart-list-inf-money{
+    color: #9F010A;
+}
+/* 小计 */
+.cart-list-add p{
+    margin-top: -50px;
+    color: #9F010A;
+    font-size: 13px;
+}
+/* 操作 */
+.cart-list-do div{
+    width: 58px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    border: black solid 1px;
+    font-size: 13px;
+    color: #A0A1A1;
+    margin: 23px 0; 
+    cursor: pointer;  
+}
+/* 购物车里的商品信息下面的登录提示 */
+.cart-hint{
+    font-size: 13px;
+    color: #656565;
+    margin-top: 2px;
+}
+.cart-hint a{
+    color: #336698;
+}
+/* 猜你喜欢 */
+.cart-guess{
+    width: 960px;
+    margin-top: 30px;
+    font-size: 13px;
+    color: black;
+}
+.cart-guess a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+/* 五张图片 */
+.cart-guess-pictures{
+    height: 300px;
+    padding: 20px 0;
+    margin-top: 5px;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+}
+.cart-guess-pictures div{
+    height: 300px;
+    width: 182px;
+    padding: 0 5px;
+    float: left;
+}
+.cart-guess-pictures p{
+    line-height: 20px;
+    color: #656565;
+}
+/* 优惠券 */
+.cart-guess-coupon{
+    padding: 20px 0 10px;
+    height: 30px;
+    margin-top: 30px;
+}
+.cart-guess-coupon-btn{
+    width: 103px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #010D41;
+    text-align: center;
+    float: right;
+    color: #fff;
+}
+.cart-guess-coupon-btn:hover{
+    background-color: #bf163d;
+}
+.cart-guess-coupon-text{
+    width: 170px;
+    height: 26px;
+    margin-right: 5px;
+    float: right;
+    padding-left: 5px;
+}
+/* 结算 */
+.cart-close{
+    font-size: 14px;
+    color: #656565;
+    height: 148px;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 50px;
+    position: relative;
+}
+.cart-close-head{
+    padding: 5px 20px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #F6F5F3;
+}
+.cart-close-head-left{
+    float: left;
+}
+.cart-close-head-right{
+    float: right;
+    color: #9F010A;
+    font-weight: bold;
+}
+.cart-close-money{
+    padding: 5px 20px;
+}
+.cart-close-money-head{
+    padding: 5px 0;
+}
+.cart-close-money-left{
+    padding: 5px 0;
+    float: left;
+}
+.cart-close-money-left span{
+    color: #9F010A;
+}
+.cart-close-money-right{
+    height: 30px;
+    width: 77px;
+    background-color: #010D41;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+.cart-close-money-right:hover{
+    background-color: #bf163d;
+}
+.cart-close-money-hint{
+    position: absolute;
+    top: 110px;
+    right: 20px;;
+    text-align: right;
+    color: #9F010A;
+}
+.cart-close-money-hint a{
+    color: #336698;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>详细信息</title>
+    <!-- css文件 -->
+    <link rel="stylesheet" href="../../css/pages/detailed-information/detailed-inf.css">
+    <!-- 配置文件 -->
+    <script data-main="detailed-inf.js" src="../../js/lib/require.js"></script>
+</head>
+
+<body>
+    <!-- 页头 -->
+    <div id="head"></div>
+    <!-- 详细信息页面 -->
+    <div id="detailed-inf">
+        <p class="detailed-inf-title"><a href="">首页&nbsp;>&nbsp;&nbsp;</a><a href="">Sale&nbsp;>&nbsp;&nbsp;</a><a href="">男装&nbsp;>&nbsp;&nbsp;</a>纯棉橄榄球条纹短袖圆领口袋T恤</p>
+        <!-- 左边导航栏 -->
+        <div class="detailed-inf-nav">
+            <p class="detailed-inf-nav-title">限时特惠</p>
+            <span><a href="">限时超值购</a></span>
+            <p class="detailed-inf-nav-line"></p>
+            <p class="detailed-inf-nav-title">分类</p>
+            <ul class="detailed-inf-nav-list">
+                <li><a href="">女装</a></li>
+                <li class="detailed-inf-nav-list-spec">
+                    +<a href="">男装</a>
+                    <ul>
+                        <li><a href="">卫衣</a></li>
+                        <li><a href="">外套</a></li>
+                        <li><a href="">T恤/Polo衫</a></li>
+                        <li><a href="">衬衫</a></li>
+                        <li><a href="">针织衫</a></li>
+                        <li><a href="">裤装</a></li>
+                        <li><a href="">牛仔裤</a></li>
+                        <li><a href="">短裤</a></li>
+                        <li><a href="">GapFit运动系列</a></li>
+                        <li><a href="">包/鞋</a></li>
+                    </ul>
+                </li>
+                <li><a href="">男婴</a></li>
+                <li><a href="">女婴</a></li>
+                <li><a href="">男幼</a></li>
+                <li><a href="">女幼</a></li>
+                <li><a href="">男孩</a></li>
+                <li><a href="">女孩</a></li>
+                <li><a href="">GapFit</a></li>
+                <li><a href="">孕妇装</a></li>
+            </ul>
+        </div>
+        <!-- 右边的商品推荐 -->
+        <div class="detailed-inf-recommend">
+            <p class="detailed-inf-recommend-word">
+                &nbsp;<span>YOU</span>&nbsp;may like...
+            </p>
+            <p class="detailed-inf-recommend-word-also">你可能还喜欢</p>
+            <ul class="detailed-inf-recommend-ul">
+                <li>
+                    <a href=""><img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/2/6/262392new_off_white_m_1500_1_180308_1.jpg"
+                            alt=""></a>
+                    <a href="">纯棉简约纯色亨利领</a>
+                    <p>￥199.00</p>
+                </li>
+                <li>
+                    <a href=""><img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/7/1/716455white_m-1500-1_1.jpg"
+                            alt=""></a>
+                    <a href="">舒适纯棉V领T恤两件装</a>
+                    <p>￥149.00</p>
+                </li>
+                <li>
+                    <a href=""><img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/2/d/2da5a5724e907c6ce0424f97fa88e6c4_1.jpg"
+                            alt=""></a>
+                    <a href="">舒适纯棉插肩短袖圆领</a>
+                    <p>￥199.00</p>
+                </li>
+                <li>
+                    <a href=""><img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/2/2/223925persimmon-gap_ph_18_234041_m_1500_1_180726_1.jpg"
+                            alt=""></a>
+                    <a href="">纯棉条纹短袖圆领口袋</a>
+                    <p>￥149.00</p>
+                </li>
+                <li>
+                    <a href=""><img src="https://www.gap.cn/media/site/giftcard/cn_card.jpg" alt=""></a>
+                    <a href="">Gap官网礼品卡</a>
+                    <p>￥100.00&nbsp;-&nbsp;￥1000.00</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 中间的商品展示 -->
+
+        <div class="detailed-inf-goods">
+            <script id="detailed-inf_goods" type="text/html">
+                {{each lists}}
+                <!-- 中间的上方的商品的参数 -->
+                <div class="detailed-inf-goods-arguments">
+                    <div class="detailed-inf-goods-arguments-left">
+                        <div class="detailed-inf-goods-arguments-left-reduce">减价商品</div>
+                        <div class="detailed-inf-goods-arguments-left-msg"></div>
+                        <div class="detailed-inf-goods-arguments-left-big">
+                            <img src="{{$value.picture}}" alt="">
+                        </div>
+                        <div class="detailed-inf-goods-arguments-left-change">
+                            <div class="detailed-inf-goods-arguments-left-change-choice">点击图片查看细节</div>
+                            <div class="detailed-inf-goods-arguments-left-change-big">放大</div>
+                        </div>
+                        <div class="detailed-inf-goods-arguments-left-many">
+                            <div class="goods-arguments-left-many-left"><a href=""></a></div>
+                            <div class="goods-arguments-left-many-picture _first">
+                                <img src="{{$value.picture}}" alt="">
+                            </div>
+                            <div class="goods-arguments-left-many-picture _second">
+                                <img src="{{$value.picture}}"
+                                    alt="">
+                            </div>
+                            <div class="goods-arguments-left-many-picture _third">
+                                <img src="{{$value.picture}}"
+                                    alt="">
+                            </div>
+                            <div class="goods-arguments-left-many-picture _forth">
+                                <img src="{{$value.picture}}"
+                                    alt="">
+                            </div>
+                            <div class="goods-arguments-left-many-picture _fifth">
+                                <img src="{{$value.picture}}"
+                                    alt="">
+                            </div>
+                            <div class="goods-arguments-left-many-right"><a href=""></a></div>
+                        </div>
+                    </div>
+                    <div class="detailed-inf-goods-arguments-right">
+                        <p class="goods-arguments-right-name">{{$value.name}}</p>
+                        <p class="goods-arguments-right-dis">减价商品2件7折<br><span>(优惠价在购物袋页面生效)</span></p>
+                        <p class="goods-arguments-right-monry">现价：<span class="goods-arguments-right-monry-now">{{$value.price}}</span>
+                            吊牌价：<span class="goods-arguments-right-monry-price">￥ 149.00</span>
+                        </p>
+                        <div class="goods-arguments-right-num">
+                            款号：<span>000223919</span>
+                            <p class="good-arguments-right-num-join"><a href="">❤ 加入收藏</a></p>
+                        </div>
+                        <div class="goods-arguments-right-color">
+                            <p class="goods-arguments-right-color-word">颜色：<span>麻灰色</span></p>
+                            <div class="goods-arguments-right-color-div"><img src="https://www.gap.cn/media/catalog/colorblock/000223919/810_930cn14757166_1.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="goods-arguments-right-size">
+                            <p class="goods-arguments-right-size-word">尺码： 请选择</p>
+                            <div class="goods-arguments-right-size-box">175/88A(XS)</div>
+                            <div class="goods-arguments-right-size-box">175/92A(S)</div>
+                            <div class="goods-arguments-right-size-box">180/96A(M)</div>
+                            <div class="goods-arguments-right-size-box">185/104A(L)</div>
+                            <div class="goods-arguments-right-size-box">185/108A(XL)</div>
+                            <div class="goods-arguments-right-size-box">185/124A(XXL)</div>
+                        </div>
+                        <div class="goods-arguments-right-count">
+                            <p>数量： </p>
+                            <div class="_count">
+                                <div class="gooda-arguments-right-count-x _count-spec">1
+                                    <div class="_count-box">
+                                        <div class="gooda-arguments-right-count-x">2</div>
+                                        <div class="gooda-arguments-right-count-x">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods-inf-arguments-right-sum">
+                            <div class="goods-inf-arguments-right-sum-inform">
+                                <p class="goods-inf-arguments-right-sum-inform-color">颜色：<span>麻灰色</span></p>
+                                <p class="goods-inf-arguments-right-sum-inform-size">尺码：<span>175/88A(XS)</span></p>
+                                <p class="goods-inf-arguments-right-sum-inform-money">计价：<span class="_sum_inform-money"> {{$value.price}}</span></p>
+                            </div>
+                            <div class="goods-inf-arguments-right-sum-join">
+                                <div class="goods-inf-arguments-right-sum-join-btn">
+                                    加&nbsp;入&nbsp;购&nbsp;物&nbsp;车
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 中间的下方的图片 -->
+                <div class="detalied-inf-goods-star">
+                    <div class="detalied-inf-goods-star-word star-one">商品说明</div>
+                    <div class="detalied-inf-goods-star-word">支付信息</div>
+                    <div class="detalied-inf-goods-star-word">配送信息</div>
+                    <p class="detalied-inf-goods-star-stars">
+                        综合评分：
+                        <img src="https://www.gap.cn/theme/frontend/default/base/img/review_star.gif" alt="">
+                        <img src="https://www.gap.cn/theme/frontend/default/base/img/review_star.gif" alt="">
+                        <img src="https://www.gap.cn/theme/frontend/default/base/img/review_star.gif" alt="">
+                        <img src="https://www.gap.cn/theme/frontend/default/base/img/review_star.gif" alt="">
+                        <img src="https://www.gap.cn/theme/frontend/default/base/img/review_star.gif" alt="">
+                        <a href="">查看所有评论</a>
+                    </p>
+                </div>
+                <div class="detalied-inf-goods-picture">
+                    <img src="{{$value.picture}}" alt="">
+                    <img src="{{$value.picture}}" alt="">
+                    <img src="{{$value.picture}}" alt="">
+                    <img src="{{$value.picture}}" alt="">
+                    <img src="../../img/Goods-inf.jpg" alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/3informationindex4_1526035754.jpg"
+                        alt="">
+                    <img src="../../img/Goods-size.jpg" alt="">
+                    <img src="https://www.gap.cn/media/product/banner/nans-zimu.jpg" alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/4alternativeviews_1_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/4alternativeviews_2_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/4alternativeviews_3_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/5laydownviews_2_1526035754.jpg" alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/6productdetails_1_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/6productdetails_2_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/6productdetails_3_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/6productdetails_4_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/6productdetails_5_1526035754.jpg"
+                        alt="">
+                    <img src="https://tpsc.gap.cn/baiyi/pdp/223919001/cut/1526035754/sc/8colordisplay_1_1526035754.jpg" alt="">
+                    <img src="https://www.gap.cn/theme/frontend/default/default/images/recommend/pdp/new_wash_statement.jpg"
+                        alt="">
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div id="foot"></div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <!-- css文件 -->
+    <link rel="stylesheet" href="../../css/pages/register/register.css">
+    <!-- 配置文件（为相对路径） -->
+    <script data-main="register.js" src="../../js/lib/require.js"></script>
+</head>
+<body>
+    <!-- 页头 -->
+    <div id="head"></div>    
+    <!-- 登录页面的主要内容 -->
+    <div class="mainContent">
+        <p class="mainContent-head"><a href="">首页</a>&nbsp;>&nbsp;&nbsp;登录</p>
+        <!-- 已注册用户 -->
+        <div class="mainContent-already">
+            <div class="mainContent-title">已注册用户（Old Navy账户畅通无阻）</div>
+            <!-- 用户名 -->
+            <div class="already-name">
+                <div class="already-name-word">登录名</div>
+                <div class="already-name-input">
+                    <div class="mainContent-verify verify-one">
+                        <div class="verify-hint">这是必填项</div>
+                    </div>
+                    <input type="text" placeholder="用户名/Email/手机号"><br>
+                    如果您已经在门店注册为会员，请使用手机号进行登录或信息补充。
+                </div>
+            </div>
+            <!-- 密码及下面的内容 -->
+            <div class="already-pw">
+                <div class="already-pw-word">密&nbsp;&nbsp;&nbsp;码</div>
+                <div class="already-pw-input">
+                    <div class="mainContent-verify verify-two">
+                        <div class="verify-hint">这是必填项</div>
+                    </div>
+                    <input class="text" type="text">
+                    <p>
+                        <input type="checkbox" checked="checked">记住我的密码<a class="find" href="">找回密码</a>
+                    </p>
+                    <div class="already-pw-btn">登录</div>
+                    <p class="already-pw-use">使用合作网站账号登录</p>
+                    <p class="already-pw-weixin"><a href="">支付宝</a> | <a href="">新浪微博</a> | <a href="">微信登录</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 未注册用户 -->
+        <div class="mainContent-not">
+            <div class="mainContent-title">未注册用户</div>
+            <div class="not-picture">
+                <a href=""><img src="https://www.gap.cn/theme/frontend/default/default/images/180810_gap_register_notice_cn.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div id="foot"></div>
+</body>
+</html>

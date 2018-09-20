@@ -1,0 +1,110 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* 注册页面主要内容 */
+#loginContent{
+    width: 1100px;
+    height: 600px;
+    padding-left: 100px;
+}
+#loginContent a{
+    text-decoration: none;
+}
+.loginContent-head,.loginContent-head a{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.loginContent-head{
+    margin: 10px 0;
+}
+/* 注册页面的内容框 */
+#loginContent .loginBox{
+    width: 980px;
+    height: 533px;
+    border: 5px solid #D4D1CC;
+    float: left;
+    font-size: 13px;
+    color: #656565;
+}
+.loginBox-word{
+    padding-left: 30px;
+    margin: 15px 0 20px 0;
+}
+.loginBox-line{
+    width: 880px;
+    height: 9px;
+    border-top: #656565 1px dotted;
+    margin-top: 25px;
+}
+/* 注册表 */
+.loginBox-form{
+    margin-top: 25px;
+}
+.loginBox-form li{
+    margin-bottom: 18px;
+}
+.loginBox-form-left{
+    width: 170px;
+    height: 30px;
+    float: left;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 14px;
+}
+.loginBox-form-right{
+    position: relative;
+    margin-left: 185px;
+}
+.input-big{
+    width: 300px;
+    height: 23px;
+    border: #A8A8A8 1px solid;
+    padding-left: 3px;
+    margin-right: 15px;
+}
+.input-small{
+    width: 153px;
+    height: 23px;
+    border: #A8A8A8 1px solid;
+    padding-left: 3px;
+    margin-right: 15px;
+}
+.loginBox-form-right .auth_code{
+    width: 70px;
+    height: 23px;
+    line-height: 23px;
+    background-color: #DCDCDC;
+    color: #FEFEFE;
+    padding: 1px 6px;
+    text-align: center;
+    position: absolute;
+    left: 170px;
+    top: 0px;
+}
+.loginBox-form-right p{
+    margin-top: 25px;
+    font-size: 14px;
+}
+.loginBox-form-right p a{
+    color: #336698;
+}
+.loginBox-form-right .form-btn{
+    width: 74px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: #FEFEFE;
+    background-color: #010D41;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.loginBox-form-right .form-btn:hover{
+    background-color: #bf163d;
+    transition: 0.5s;
+}
