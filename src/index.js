@@ -3,11 +3,11 @@
 //先加载config配置文件
 require(["js/conf/config"],function(){
 	//再加载各个模块
-	require(["jquery","swiper","template-web"],function($,Swiper){
+	require(["jquery","swiper","head"],function($,Swiper){
 	//console.log("index3.js");		
 		//等页面加载完成后
 		$(function(){
-			$("#head").load("./pages/lib/head.html");
+			
 			$("#foot").load("./pages/lib/foot.html");
 			
 			//打折的轮播图

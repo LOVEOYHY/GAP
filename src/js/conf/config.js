@@ -5,6 +5,7 @@ require.config({
         "jquery" : "./js/lib/jquery-1.9.0",
         "swiper" : "./js/lib/swiper-4.3.5.min",
         "template-web" : "./js/lib/template-web",
-        "cookie" : "./js/mylib/cookie"
+        "cookie" : "./js/mylib/cookie",
+        "head" : "./js/mylib/head"
     }
 })

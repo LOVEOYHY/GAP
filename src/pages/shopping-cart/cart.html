@@ -29,7 +29,7 @@
             </thead>
             <tbody>
                 <script id="tr-cart-list" type="text/html">
-                
+                {{each GoodsStr}}
                 <!-- 信息列表 -->
                 <tr class="cart-list">
                     <!-- 勾选 -->
@@ -67,7 +67,7 @@
                         <div class="cart-list-do-del">删除</div>
                     </td>
                 </tr>
-                
+                {{/each}}
                 </script>
             </tbody>
         </table>

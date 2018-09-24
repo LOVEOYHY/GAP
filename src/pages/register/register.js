@@ -1,11 +1,11 @@
 
 
 require(["../../js/conf/config"], function () {
-    require(["jquery", "swiper", "cookie"], function ($, Swiper, cookie) {
+    require(["jquery", "swiper", "cookie","head"], function ($, Swiper, cookie) {
         $(function () {
             // 为相对路径
-            $("#head").load("../lib/head.html");
-            $("#foot").load("../lib/foot.html");
+            // $("#head").load("../lib/head.html");
+            $("#foot").load("/pages/lib/foot.html");
             console.log(JSON.parse(cookie.getCookie("users")));
             var user = JSON.parse(cookie.getCookie("users"));
             

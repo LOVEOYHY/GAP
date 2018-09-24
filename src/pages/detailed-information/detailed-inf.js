@@ -1,11 +1,11 @@
 
 
 require(["../../js/conf/config"],function(){
-    require(["jquery","swiper","template-web","cookie"],function($,Swiper,template,cookie){
+    require(["jquery","swiper","template-web","cookie","head"],function($,Swiper,template,cookie){
         $(function(){
             // 为相对路径
-            $("#head").load("../lib/head.html");
-            $("#foot").load("../lib/foot.html");
+            // $("#head").load("../lib/head.html");
+            $("#foot").load("/pages/lib/foot.html");
 
             //console.log("de"+cookie.getCookie("list"));
             
@@ -94,9 +94,29 @@ require(["../../js/conf/config"],function(){
                             "goodsCount" : goodsCount,
                             "goodsMoney" : goodsMoney
                         }
+
+
+                        var strs = cookie.getCookie("goods");
+                        var Goods = null;
+                        if( strs == null ){
+                            Goods = [];
+                            Goods.push(goods);
+                        }else{
+                            Goods = JSON.parse(strs);
+                            var tag = 0;
+                            Goods.some(function(item){
+                                if( item.goodsPicture == goods.goodsPicture ){
+                                    tag = 1;
+                                }
+                            });
+                            if( tag == 0 ){
+                                Goods.push(goods);
+                            }
+                        }
+
                     
                         console.log(goods,"aaa");
-                        cookie.setCookie("goods",JSON.stringify(goods),3600*12*7,"/");
+                        cookie.setCookie("goods",JSON.stringify(Goods),3600*12*7,"/");
                     })
                 });
                 
