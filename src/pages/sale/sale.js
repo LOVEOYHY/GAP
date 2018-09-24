@@ -21,12 +21,12 @@ require(["../../js/conf/config"],function(){
         
                     $(".sale-goods").html( $(".sale-goods").html()+tempstr );
 
-                    var list = [];
+                    //var list = [];
                     $(".saleGoodsBox").on("click",".saleGoodsBox-picture",function(){
                         //console.log("ok")
                         var picture = $(this).attr("src");
                         var name = $(this).parent().next().children().text();
-                        var price = $(this).parent().next().next().text();
+                        var price = $(this).parent().next().next().children().text();
                         //console.log(name);
                         //console.log(picture,price);
                         var obj = {
@@ -37,7 +37,7 @@ require(["../../js/conf/config"],function(){
                         //console.log(obj);
                         // list.push(obj);
                         //console.log(list);
-                        var str = JSON.stringify(list);
+                        //var str = JSON.stringify(list);
                         //console.log(str);
                         // var now = new Date();
                         // now.setDate(now.getDate()+7);

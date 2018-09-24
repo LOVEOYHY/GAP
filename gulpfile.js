@@ -65,7 +65,7 @@ gulp.task("refreshCSS", ()=>{
 gulp.task("server", ()=>{
     //创建一个服务器
     connect.server({
-        root : "src", //指定服务器根目录在哪
+        root : "dist", //指定服务器根目录在哪
         port : 8080, 
         livereload : true  //服务器是否可以热部署（即时刷新）
     })

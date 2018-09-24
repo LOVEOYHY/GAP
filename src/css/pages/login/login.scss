@@ -1,0 +1,130 @@
+
+
+$map-width : (all:1200px, small:1100px);
+$map-font : (all:14px, small:13px, big:15px);
+$dir : left;
+$size :100px;
+$black : #000;
+$color65 : #656565;
+$color9f : #9F010A;
+
+*{
+    margin : 0 auto;
+    padding : 0;
+    list-style: none;
+}
+
+
+// 注册页面主要内容
+#loginContent{
+    width: map-get($map-width,small);
+    height: 600px;
+    padding-left: $size;
+    a{
+        text-decoration: none;
+    }
+    .loginContent-head{
+        font-size: map-get($map-font,all);
+        color: $black;
+        font-weight: bold;
+        margin: 10px 0;
+        a{
+            font-size: map-get($map-font,all);
+            color: $black;
+            font-weight: bold;
+        }
+    }
+    // 注册页面的内容框
+    .loginBox{
+        width: 980px;
+        height: 533px;
+        border: 5px solid #D4D1CC;
+        float: left;
+        font-size: map-get($map-font,small);
+        color: $color65;
+        .loginBox-word{
+            padding-left: 30px;
+            margin: 15px 0 20px 0;
+        }
+        .loginBox-line{
+            width: 880px;
+            height: 9px;
+            border-top: $color65 1px dotted;
+            margin-top: 25px;
+        }
+        // 注册表
+        .loginBox-form{
+            margin-top: 25px;
+            li{
+                margin-bottom: 18px;
+                // 左边的内容
+                .loginBox-form-left{
+                    width: 170px;
+                    height: 30px;
+                    float: left;
+                    padding-right: 15px;
+                    text-align: right;
+                    font-size: map-get($map-font,all);
+                }
+                // 右边的内容
+                .loginBox-form-right{
+                    position: relative;
+                    margin-left: 185px;
+                    span{
+                        color: $color9f;
+                    }
+                    // 大的输入框
+                    .input-big{
+                        width: 300px;
+                        height: 23px;
+                        border: #A8A8A8 1px solid;
+                        padding-left: 3px;
+                        margin-right: 15px;
+                    }
+                    // 小的输入框
+                    .input-small{
+                        width: 153px;
+                        height: 23px;
+                        border: #A8A8A8 1px solid;
+                        padding-left: 3px;
+                        margin-right: 15px;
+                    }
+                    .auth_code{
+                        width: 70px;
+                        height: 23px;
+                        line-height: 23px;
+                        background-color: #DCDCDC;
+                        color: #FEFEFE;
+                        padding: 1px 6px;
+                        text-align: center;
+                        position: absolute;
+                        left: 170px;
+                        top: 0px;
+                    }
+                    p{
+                        margin-top: 25px;
+                        font-size: map-get($map-font,all);
+                        a{
+                            color: #336698;
+                        }
+                    }
+                    .form-btn{
+                        width: 74px;
+                        height: 27px;
+                        text-align: center;
+                        line-height: 27px;
+                        color: #FEFEFE;
+                        background-color: #010D41;
+                        float: left;
+                        margin-top: 20px;
+                        cursor: pointer;
+                        .form-btn:hover{
+                            background-color: #bf163d;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

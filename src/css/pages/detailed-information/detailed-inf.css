@@ -114,7 +114,7 @@
     font-size: 14px;
     color: white;
     text-align: center;
-    background: url(../../../img/viewitem.gif) 0 0 no-repeat;
+    background: url(/img/viewitem.gif) 0 0 no-repeat;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -149,14 +149,14 @@
     width: 122px;
     height: 25px;
     padding-left: 30px;
-    background: url(../../../img/viewitem.gif) 5px -65px no-repeat;
+    background: url(/img/viewitem.gif) 5px -65px no-repeat;
     float: left;
 }
 .detailed-inf-goods-arguments-left-change-big{
     width: 30px;
     height: 30px;
     padding-left: 25px;
-    background: url(../../../img/viewitem.gif) 5px -110px no-repeat;
+    background: url(/img/viewitem.gif) 5px -110px no-repeat;
     float: right;
     cursor: pointer;
 }
@@ -170,10 +170,10 @@
     cursor: pointer;
 }
 .goods-arguments-left-many-left{
-    background: url(../../../img/viewitem.gif) -142px 0 no-repeat;  
+    background: url(/img/viewitem.gif) -142px 0 no-repeat;  
 }
 .goods-arguments-left-many-right{
-    background: url(../../../img/viewitem.gif) -194px 0 no-repeat;  
+    background: url(/img/viewitem.gif) -194px 0 no-repeat;  
 }
 .goods-arguments-left-many-picture{
     width: 45px;
@@ -288,25 +288,24 @@
 }
 ._count-spec{
     background-color: #E9E9E9;
-    z-index: 4;
-    position: absolute;
+    /* z-index: 4; */
+    /* position: absolute;
     top: 0px;
-    left: 0px;
+    left: 0px; */
 }
-._count{
+/* ._count{
     position: relative;
     float: left;
     width: 40px;
     height: 40px;
     background-color: #ccc;
     overflow: hidden;
-}
+} */
 ._count-box{
+    float: left;
     height: 40px;
-    width: 80px;
-    position: absolute;
-    top: -1px;
-    left: 39px;
+    width: 130px;
+    position: relative;
 }
 .goods-inf-arguments-right-sum{
     height: 100px;

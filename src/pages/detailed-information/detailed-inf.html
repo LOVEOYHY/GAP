@@ -131,7 +131,8 @@
                     <div class="detailed-inf-goods-arguments-right">
                         <p class="goods-arguments-right-name">{{$value.name}}</p>
                         <p class="goods-arguments-right-dis">减价商品2件7折<br><span>(优惠价在购物袋页面生效)</span></p>
-                        <p class="goods-arguments-right-monry">现价：<span class="goods-arguments-right-monry-now">{{$value.price}}</span>
+                        <p class="goods-arguments-right-monry">现价：<span class="goods-arguments-right-monry-now">￥
+                            <b class="goods-arguments-right-monry_now">{{$value.price}}</b></span>
                             吊牌价：<span class="goods-arguments-right-monry-price">￥ 149.00</span>
                         </p>
                         <div class="goods-arguments-right-num">
@@ -154,20 +155,20 @@
                         </div>
                         <div class="goods-arguments-right-count">
                             <p>数量： </p>
-                            <div class="_count">
-                                <div class="gooda-arguments-right-count-x _count-spec">1
-                                    <div class="_count-box">
-                                        <div class="gooda-arguments-right-count-x">2</div>
-                                        <div class="gooda-arguments-right-count-x">3</div>
-                                    </div>
+                            <!-- <div class="_count"> -->
+                                <div class="_count-box">
+                                    <div class="gooda-arguments-right-count-x _count-spec">1</div>
+                                    <div class="gooda-arguments-right-count-x">2</div>
+                                    <div class="gooda-arguments-right-count-x">3</div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                         <div class="goods-inf-arguments-right-sum">
                             <div class="goods-inf-arguments-right-sum-inform">
                                 <p class="goods-inf-arguments-right-sum-inform-color">颜色：<span>麻灰色</span></p>
                                 <p class="goods-inf-arguments-right-sum-inform-size">尺码：<span>175/88A(XS)</span></p>
-                                <p class="goods-inf-arguments-right-sum-inform-money">计价：<span class="_sum_inform-money"> {{$value.price}}</span></p>
+                                <p class="goods-inf-arguments-right-sum-inform-money">计价：<span class="_sum_inform-money">￥
+                                    <b class="_sum_inform_money">{{$value.price}}</b></span></p>
                             </div>
                             <div class="goods-inf-arguments-right-sum-join">
                                 <div class="goods-inf-arguments-right-sum-join-btn">

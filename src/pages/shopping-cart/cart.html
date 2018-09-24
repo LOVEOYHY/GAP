@@ -29,7 +29,7 @@
             </thead>
             <tbody>
                 <script id="tr-cart-list" type="text/html">
-                {{each lists}}
+                
                 <!-- 信息列表 -->
                 <tr class="cart-list">
                     <!-- 勾选 -->
@@ -41,9 +41,9 @@
                     </td>
                     <!-- 商品 -->
                     <td class="cart-list-goods">
-                        <img src="{{$value.picture}}" alt="">
+                        <img src="{{$value.goodsPicture}}" alt="">
                         <div class="cart-list-goods_box">
-                            <p><a href="">{{$value.name}}</a></p><br>
+                            <p><a href="">{{$value.goodsName}}</a></p><br>
                             <p class="cart-list-goods-num">货号：308659420</p>
                             <p class="cart-list-goods-red">减价商品</p>
                         </div>
@@ -53,13 +53,13 @@
                         <ul class="cart-list-inf-ul">
                             <li>颜色：<span class="cart-list-inf-color">麻灰色</span></li>
                             <li>尺码：<span class="cart-list-inf-size">185/108A(XL)</span></li>
-                            <li>数量：<span class="cart-list-inf-sum">1</span></li>
-                            <li>吊牌价：<a class="cart-list-inf-money" href="">{{$value.price}}</a></li>
+                            <li>数量：<span class="cart-list-inf-sum">{{$value.goodsCount}}</span></li>
+                            <li>吊牌价：<a class="cart-list-inf-money" href="">￥{{$value.goodsPrice}}</a></li>
                         </ul>
                     </td>
                     <!-- 小计 -->
                     <td class="cart-list-add">
-                        <p>{{$value.price}}</p>
+                        <p>￥{{$value.goodsMoney}}</p>
                     </td>
                     <!-- 操作 -->
                     <td class="cart-list-do">
@@ -67,56 +67,63 @@
                         <div class="cart-list-do-del">删除</div>
                     </td>
                 </tr>
-                {{/each}}
+                
                 </script>
             </tbody>
         </table>
-        <!-- 购物车里的商品列表下面的登录提示 -->
-        <p class="cart-hint">现在<a href="">登录</a>，您购物车中的商品将被保存</p>
-        <!-- 猜你喜欢 -->
-        <div class="cart-guess">
-            <p class="cart-guess-word">&nbsp;&nbsp;&nbsp;猜你喜欢</p>
-            <!-- 五张图片 -->
-            <div class="cart-guess-pictures">
-                <div>
-                    <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/8/4/84534e10d3cf9fc56ad4d03df9e8780b_1.jpg" alt="">
-                    <p><a href="">时尚竹节棉短袖圆领口袋T恤</a><br>￥149.00</p>
+        <div class="cart_under">
+            <!-- 购物车里的商品列表下面的登录提示 -->
+            <p class="cart-hint">现在<a href="">登录</a>，您购物车中的商品将被保存</p>
+            <!-- 猜你喜欢 -->
+            <div class="cart-guess">
+                <p class="cart-guess-word">&nbsp;&nbsp;&nbsp;猜你喜欢</p>
+                <!-- 五张图片 -->
+                <div class="cart-guess-pictures">
+                    <div>
+                        <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/8/4/84534e10d3cf9fc56ad4d03df9e8780b_1.jpg" alt="">
+                        <p><a href="">时尚竹节棉短袖圆领口袋T恤</a><br>￥149.00</p>
+                    </div>
+                    <div>
+                        <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/7/6/768638navy_heather_p_5_1.jpg" alt="">
+                        <p><a href="">纯棉基本款纯色舒适V领短袖T恤</a><br>￥79.00</p>
+                    </div>
+                    <div>
+                        <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/9/8/988688basic_black_m_1500_1_180508_1.jpg" alt="">
+                        <p><a href="">百搭基本款时尚V领T恤</a><br>￥99.00</p>
+                    </div>
+                    <div>
+                        <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/2/2/227229new_off_white_m_1500_1_180419_1.jpg" alt="">
+                        <p><a href="">纯棉活力图案圆领短袖T恤</a><br>￥98.00</p>
+                    </div>
+                    <div>
+                        <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/a/5/a535ba34843629943684c235d72d51fd_1.jpg" alt="">
+                        <p><a href="">时尚舒适天鹅绒西装外套</a><br>￥699.00</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/7/6/768638navy_heather_p_5_1.jpg" alt="">
-                    <p><a href="">纯棉基本款纯色舒适V领短袖T恤</a><br>￥79.00</p>
+                <!-- 优惠券 -->
+                <div class="cart-guess-coupon">
+                    <div class="cart-guess-coupon-btn">使&nbsp;用&nbsp;优&nbsp;惠&nbsp;券</div>
+                    <input class="cart-guess-coupon-text" type="text" placeholder="请输入优惠代码">
                 </div>
-                <div>
-                    <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/9/8/988688basic_black_m_1500_1_180508_1.jpg" alt="">
-                    <p><a href="">百搭基本款时尚V领T恤</a><br>￥99.00</p>
-                </div>
-                <div>
-                    <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/2/2/227229new_off_white_m_1500_1_180419_1.jpg" alt="">
-                    <p><a href="">纯棉活力图案圆领短袖T恤</a><br>￥98.00</p>
-                </div>
-                <div>
-                    <img src="https://www.gap.cn/media/catalog/product/cache/1/image/180x240/9df78eab33525d08d6e5fb8d27136e95/a/5/a535ba34843629943684c235d72d51fd_1.jpg" alt="">
-                    <p><a href="">时尚舒适天鹅绒西装外套</a><br>￥699.00</p>
+                <!-- 结算 -->
+                <div class="cart-close">
+                    <div class="cart-close-head">
+                        <p class="cart-close-head-left">商品总数：<span>2</span></p>
+                        <p class="cart-close-head-right">总计：￥<span>123.20</span></p>
+                    </div>
+                    <div class="cart-close-money">
+                        <p class="cart-close-money-head">促销优惠(减价商品2件7折)</p>
+                        <p class="cart-close-money-left">已优惠：<span>￥0</span></p>
+                        <div class="cart-close-money-right">结算</div><br>
+                        <p class="cart-close-money-hint">注册用户<a href="">登录</a>后购买可获得积分</p>
+                    </div>
                 </div>
             </div>
-            <!-- 优惠券 -->
-            <div class="cart-guess-coupon">
-                <div class="cart-guess-coupon-btn">使&nbsp;用&nbsp;优&nbsp;惠&nbsp;券</div>
-                <input class="cart-guess-coupon-text" type="text" placeholder="请输入优惠代码">
-            </div>
-            <!-- 结算 -->
-            <div class="cart-close">
-                <div class="cart-close-head">
-                    <p class="cart-close-head-left">商品总数：<span>2</span></p>
-                    <p class="cart-close-head-right">总计：￥<span>123.20</span></p>
-                </div>
-                <div class="cart-close-money">
-                    <p class="cart-close-money-head">促销优惠(减价商品2件7折)</p>
-                    <p class="cart-close-money-left">已优惠：<span>￥174.80</span></p>
-                    <div class="cart-close-money-right">结算</div><br>
-                    <p class="cart-close-money-hint">注册用户<a href="">登录</a>后购买可获得积分</p>
-                </div>
-            </div>
+        </div>
+        <div class="cart_isNull">
+            <p>您的购物袋为空，请<a href="">登录</a>后查看</p>
+            <p>我的购物袋中的宝贝</p>
+            <p><a href="">回首页购物</a></p>
         </div>
     </div>
     <!-- 页脚 -->
